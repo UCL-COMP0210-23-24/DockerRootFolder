@@ -38,24 +38,3 @@ cmake --install build/ --prefix install_path
 ```
 
 where you replace `install_path` a path to a folder of your choice.
-
-In your top level CMakeLists.txt you will see the following line, which should work for a global install:
-
-```
-find_package(Catch2 3 REQUIRED)
-```
-
-or if you have chosen a local install, you should uncomment and complete the lines below it:
-
-```
- if(NOT Catch2_FOUND)
- {
-     # add local install path if required.
-     find_package(Catch2 3 REQUIRED PATHS install_path)
- }
- endif()
-```
-
-replacing `install_path` with the path to your chosen install folder. This allows cmake to find your Catch2 installation, including the header files and the compiled library.
-
-
