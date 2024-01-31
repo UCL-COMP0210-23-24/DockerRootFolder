@@ -1,12 +1,16 @@
 # DockerRootFolder
 
-Root folder for those using Docker on COMP0210. Open VSCode from here and then re-open in container to work within the container. 
+Root folder for those using Docker on COMP0210. 
+
+This folder in VSCode either by navigating to it in the terminal and typing `code .` or by clicking "File -> Open Folder" in the VSCode menu and selecting this folder. 
+
+Re-open the folder in the container. In the bottom right hand corner a dialogue box should automatically appear suggesting this, but if not you can click the blue `><` symbol in the bottom left and select "Reopen in Container". The first time this happens, it will have to build, so it might take a while. On subsequent re-openings however it should be quicker. 
 
 To avoid having to rebuild the image, and reinstall things like Catch2, you can work from within this folder and clone each week's exercises into a sub-folder, reusing the same image each week. 
 
-## Installing Catch2 
+## Installing Catch2 Inside Your Container
 
-You can clone the [Catch2 repository here](https://github.com/catchorg/Catch2). To install you should complete the following steps (using your VSCode terminal while inside your container):
+Once you have reopened in your container, you can clone the [Catch2 repository here](https://github.com/catchorg/Catch2). To install you should complete the following steps:
 
 - Clone the repository. 
 - Move into the Catch2 folder in your terminal.
